@@ -5,33 +5,27 @@
 }
 
 .navbar_container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 15px;
-    position: relative;
 }
 
 .logo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    height: 44px
 }
 
-#AmariLogo {
-    width: 4em;
-    cursor: pointer;
+.logo img {
+    max-height: 100%;
 }
 
 .menu {
     display: flex;
-    justify-content: flex-end;
     width: 100%;
 }
 
 .menu h5 {
     margin: 10px;
-    cursor: pointer;
 }
 
 .menu h5 a {
