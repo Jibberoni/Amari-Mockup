@@ -2,10 +2,19 @@
     background-color: #282c34;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
+    --light-branding: #ffeba9; 
+}
+
+body {
+    margin: 0;
 }
 
 .navbar_container {
+    margin: 8px;
     padding: 15px;
+    border: solid 2px #ffeba9;
+    border-radius: 10px;
+    background-color: #23272A;
 }
 
 .logo {
@@ -24,11 +33,11 @@
     font-weight: 600;
 }
 
-.logo p:first-child {
+#amari_text {
     margin-right: auto; /* push the first <p> element to the left */
 }
 
-.logo p:last-child {
+#bot_text {
     margin-left: auto; /* push the last <p> element to the right */
 }
 
@@ -42,7 +51,7 @@
 }
 
 .menu h5 a:hover {
-    color: #ffeba9;
+    color: var(--light-branding);
 }
 
 .navbar_container h5 {
@@ -57,6 +66,51 @@
 
 .icon_formatting {
     border-radius: 50%;
+    border: solid 2px var(--light-branding);
     max-height: 44px;
     margin-left: auto;
 }
+
+#logout_svg {
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.footer {
+    background-color: var(--light-branding);
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.wave-wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.wave {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50px;
+}
+
+.wave .shape-fill {
+    fill: #FFEBA9;
+}
+
