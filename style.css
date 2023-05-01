@@ -12,11 +12,28 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    height: 44px
+    height: 44px;
+    display: flex;
+    align-items: center; /* vertically center the items */
 }
 
-.logo img {
-    max-height: 100%;
+.logo p {
+    margin: 0;
+    color: #ffeba9;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.logo p:first-child {
+    margin-right: auto; /* push the first <p> element to the left */
+}
+
+.logo p:last-child {
+    margin-left: auto; /* push the last <p> element to the right */
+}
+
+#logo_img {
+    height: 44px;
 }
 
 .menu {
@@ -24,20 +41,22 @@
     width: 100%;
 }
 
-.menu h5 {
+.menu h5 a:hover {
+    color: #ffeba9;
+}
+
+.navbar_container h5 {
     margin: 10px;
 }
 
-.menu h5 a {
+.navbar_container h5 a {
     text-decoration: none;
     color: whitesmoke;
     font-size: 18px;
 }
 
-.menu h5 a:hover {
-    color: #ffeba9;
-}
-
-.menu h5:last-child {
+.icon_formatting {
+    border-radius: 50%;
+    max-height: 44px;
     margin-left: auto;
 }
