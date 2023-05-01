@@ -34,17 +34,14 @@ body {
     margin: 0;
     color: #ffeba9;
     font-size: 24px;
-    font-weight: 600;
 }
 
 #amari_text {
     margin-right: auto;
-    /* push the first <p> element to the left */
 }
 
 #bot_text {
     margin-left: auto;
-    /* push the last <p> element to the right */
 }
 
 #logo_img {
@@ -56,15 +53,15 @@ body {
     width: 100%;
 }
 
-.menu h5 a:hover {
-    color: var(--light-branding);
+.menu p a:hover {
+    color: var(--dark-branding);
 }
 
-.navbar_container h5 {
+.navbar_container p {
     margin: 10px;
 }
 
-.navbar_container h5 a {
+.navbar_container p a {
     text-decoration: none;
     color: whitesmoke;
     font-size: 18px;
@@ -81,7 +78,6 @@ body {
     width: 24px;
     height: 24px;
     margin: 10px;
-    padding-left: 10px;
 }
 
 .footer {
@@ -94,9 +90,6 @@ body {
 
 .wave-wrapper {
     position: relative;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
 }
 
 .wave {
@@ -112,13 +105,14 @@ body {
 .wave svg {
     position: relative;
     display: block;
-    width: calc(100% + 1.3px);
-    height: var(--footer-height);
+    width: calc(132% + 1.3px);
+    height: 32px;
 }
 
 .wave .shape-fill {
     fill: var(--dark-bg);
 }
+
 
 .footer_menu {
     display: flex;
@@ -128,10 +122,18 @@ body {
     max-width: 100%;
 }
 
-.footer_menu a, .footer_menu h5 {
+.footer_menu a, .footer_menu p {
     margin-top: 20px;
     text-decoration: none;
-    font-size: 1.3em;
-    color: var(--dark-branding);
+    font-size: 1.1em;
+    color: whitesmoke;
     text-shadow: #23272A 1px 1px 0;
+}
+
+.footer_menu a:hover {
+    color: var(--dark-branding);
+}
+
+#text_unclickable {
+    color: var(--light-branding);
 }
