@@ -1,12 +1,15 @@
 :root {
-    background-color: #282c34;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     --light-branding: #ffeba9;
     --dark-branding: #ff795c;
-    --dark-bg: #23272A;
+    --dark-brown: #5f1210;
+    --light-brown: #883636;
+    --dark-gray: #23272A;
+    --light-gray: #282c34;
     --footer-height: 70px;
-    --border-colour: var(--dark-branding);
+    --border-colour: var(--dark-brown);
+    background-color: var(--light-gray);
 }
 
 /* NAVBAR */
@@ -16,7 +19,7 @@
     padding: 15px;
     border: solid 2px var(--border-colour);
     border-radius: 10px;
-    background-color: var(--dark-bg);
+    background-color: var(--dark-gray);
 }
 
 .logo {
@@ -96,13 +99,77 @@ body {
 }
 
 main {
-    margin: 30px 8px;
+    margin: 30px;
     padding: 15px;
+    padding-bottom: 81px; /* CHANGE ME */
     border: solid 2px var(--border-colour);
     border-radius: 10px;
-    background-color: var(--dark-bg);
+    background-color: var(--dark-gray);
     color: whitesmoke;
-    height: 1200px;
+}
+
+.intro_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro_text p:first-child {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.intro_text span {
+    color: var(--dark-branding);
+}
+
+.typewriter {
+    margin-top: 0;
+    color: gray;
+    width: 20ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 24px;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+.add-to-discord-btn {
+    background-color: var(--light-brown);
+    color: whitesmoke;
+    border: 2px solid var(--dark-brown);
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.add-to-discord-btn:hover {
+    background-color: var(--dark-brown);
+    color: var(--light-branding);
 }
 
 .server_count {
@@ -127,7 +194,7 @@ main {
 /* FOOTER */
 
 .footer {
-    background-color: var(--dark-bg);
+    background-color: var(--dark-gray);
     height: var(--footer-height);
     width: 100%;
     margin-top: auto;
@@ -155,7 +222,7 @@ main {
 }
 
 .wave .shape-fill {
-    fill: var(--dark-bg);
+    fill: var(--dark-gray);
 }
 
 .footer_menu {
@@ -168,18 +235,19 @@ main {
 
 .footer_menu a,
 .footer_menu p {
-    margin-top: 20px;
+    margin-top: 25px;
     text-decoration: none;
     font-size: 1.1em;
     color: whitesmoke;
-    text-shadow: #23272A 1px 1px 0;
 }
 
 .footer_menu a:hover {
+    /* Footer Link Highlighting */
     color: var(--dark-branding);
 }
 
 #text_unclickable {
+    /* 2023 AmariBot. All Rights Reserved. */
     color: var(--light-branding);
 }
 
