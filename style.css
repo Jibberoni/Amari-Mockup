@@ -6,28 +6,17 @@
     --dark-branding: #ff795c;
     --dark-bg: #23272A;
     --footer-height: 70px;
+    --border-colour: var(--dark-branding);
 }
 
-body {
-    margin: 0;
-}
+/* NAVBAR */
 
 .navbar_container {
     margin: 8px;
     padding: 15px;
-    border: solid 2px #ffeba9;
+    border: solid 2px var(--border-colour);
     border-radius: 10px;
     background-color: var(--dark-bg);
-}
-
-main {
-    margin: 30px 8px;
-    padding: 15px;
-    border: solid 2px #ffeba9;
-    border-radius: 10px;
-    background-color: var(--dark-bg);
-    color: whitesmoke;
-    height: 65vh;
 }
 
 .logo {
@@ -37,7 +26,6 @@ main {
     height: 44px;
     display: flex;
     align-items: center;
-    /* vertically center the items */
 }
 
 .logo p {
@@ -56,6 +44,13 @@ main {
 
 #logo_img {
     height: 44px;
+    transform: rotate(0deg);
+    transition: transform 0.65s ease-in-out 0s;
+}
+
+#logo_img:hover {
+    transform: rotate(360deg);
+    transition: transform 0.65s ease-in-out 0s;
 }
 
 .menu {
@@ -64,7 +59,7 @@ main {
 }
 
 .menu p a:hover {
-    color: var(--dark-branding);
+    color: var(--light-branding);
 }
 
 .navbar_container p {
@@ -79,7 +74,7 @@ main {
 
 .icon_formatting {
     border-radius: 50%;
-    border: solid 2px var(--light-branding);
+    border: solid 2px var(--border-colour);
     max-height: 44px;
     margin-left: auto;
 }
@@ -90,12 +85,52 @@ main {
     margin: 10px;
 }
 
+/* END NAVBAR */
+
+
+/* START BODY */
+
+body {
+    margin: 0;
+    position: relative;
+}
+
+main {
+    margin: 30px 8px;
+    padding: 15px;
+    border: solid 2px var(--border-colour);
+    border-radius: 10px;
+    background-color: var(--dark-bg);
+    color: whitesmoke;
+    height: 1200px;
+}
+
+.server_count {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+    justify-content: center;
+}
+
+.server_count img {
+    max-width: calc((100% / 6) - 5%);
+    height: auto;
+    margin-right: 5px;
+    flex-grow: 1;
+}
+
+/* END BODY */
+
+
+/* FOOTER */
+
 .footer {
     background-color: var(--dark-bg);
     height: var(--footer-height);
     width: 100%;
-    position: fixed;
-    bottom: 0;
+    margin-top: auto;
 }
 
 .wave-wrapper {
@@ -123,7 +158,6 @@ main {
     fill: var(--dark-bg);
 }
 
-
 .footer_menu {
     display: flex;
     justify-content: space-between;
@@ -132,7 +166,8 @@ main {
     max-width: 100%;
 }
 
-.footer_menu a, .footer_menu p {
+.footer_menu a,
+.footer_menu p {
     margin-top: 20px;
     text-decoration: none;
     font-size: 1.1em;
@@ -147,3 +182,5 @@ main {
 #text_unclickable {
     color: var(--light-branding);
 }
+
+/* END NAVBAR */
