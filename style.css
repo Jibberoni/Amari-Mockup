@@ -100,8 +100,9 @@ body {
 
 main {
     margin: 30px;
-    padding: 15px;
-    padding-bottom: 81px; /* CHANGE ME */
+    padding: 15px 0;
+    padding-bottom: 81px;
+    /* CHANGE ME */
     border: solid 2px var(--border-colour);
     border-radius: 10px;
     background-color: var(--dark-gray);
@@ -153,7 +154,7 @@ main {
 .add-to-discord-btn {
     background-color: var(--light-brown);
     color: whitesmoke;
-    border: 2px solid var(--dark-brown);
+    border: 2px solid var(--border-colour);
     border-radius: 10px;
     padding: 15px 30px;
     font-size: 1.5rem;
@@ -221,8 +222,17 @@ main {
     height: 32px;
 }
 
-.wave .shape-fill {
+#fill-wave {
     fill: var(--dark-gray);
+}
+
+#fill-wave-under {
+    fill: var(--border-colour);
+}
+
+.wave-under {
+    z-index: -1;
+    bottom: calc(var(--footer-height) + 2px);
 }
 
 .footer_menu {
@@ -252,3 +262,66 @@ main {
 }
 
 /* END NAVBAR */
+
+
+.rectangle-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.rectangle-section {
+    max-width: 80%;
+    height: 15rem;
+    margin: 7rem 0;
+    display: flex;
+    justify-content: center;
+    background-color: var(--light-gray);
+    border-top: 2px solid var(--border-colour);
+    border-bottom: 2px solid var(--border-colour);
+    position: relative;
+}
+
+.rect-left {
+    border-right: 2px solid var(--border-colour);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transform: translateX(-2px);
+}
+
+.rect-right {
+    border-left: 2px solid var(--border-colour);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-left: auto;
+    transform: translateX(2px);
+}
+
+.title-section {
+    padding: 10px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.card-title {
+    font-size: 2rem;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: var(--dark-branding);
+}
+
+.card-subtitle {
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+
+.rect-left p {
+    text-align: left;
+}
+
+.rect-right p {
+    text-align: right;
+}
