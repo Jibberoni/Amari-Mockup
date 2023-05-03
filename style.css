@@ -9,6 +9,7 @@
     --light-gray: #282c34;
     --footer-height: 70px;
     --border-colour: var(--dark-brown);
+    --link-highlight: var(--dark-branding);
     background-color: var(--light-gray);
 }
 
@@ -62,7 +63,7 @@
 }
 
 .menu p a:hover {
-    color: var(--light-branding);
+    color: var(--link-highlight);
 }
 
 .navbar_container p {
@@ -109,11 +110,16 @@ main {
     color: whitesmoke;
 }
 
+.intro_section {
+    margin: 50px;
+}
+
 .intro_text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 25px;
 }
 
 .intro_text p:first-child {
@@ -121,7 +127,7 @@ main {
     font-weight: bold;
     color: white;
     text-align: center;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .intro_text span {
@@ -129,7 +135,7 @@ main {
 }
 
 .typewriter {
-    margin-top: 0;
+    margin: 0;
     color: gray;
     width: 20ch;
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
@@ -161,16 +167,15 @@ main {
     font-weight: bold;
     cursor: pointer;
     outline: none;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in-out;
     display: block;
     margin: 0 auto;
-    margin-bottom: 100px;
     text-align: center;
 }
 
 .add-to-discord-btn:hover {
     background-color: var(--dark-brown);
-    color: var(--light-branding);
+    color: var(--link-highlight);
 }
 
 .server_count {
@@ -263,65 +268,56 @@ main {
 
 /* END NAVBAR */
 
-
-.rectangle-container {
+.info_section {
     display: flex;
-    flex-direction: column;
-    margin-top: 20px;
+    justify-content: space-between;
+    margin: 20px;
 }
 
-.rectangle-section {
-    max-width: 80%;
-    height: 15rem;
-    margin: 7rem 0;
-    display: flex;
-    justify-content: center;
+.content_section {
+    width: 30%;
     background-color: var(--light-gray);
-    border-top: 2px solid var(--border-colour);
-    border-bottom: 2px solid var(--border-colour);
+    padding: 20px;
+    border: var(--dark-brown) solid 2px;
+    border-radius: 10px;
     position: relative;
 }
 
-.rect-left {
-    border-right: 2px solid var(--border-colour);
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    transform: translateX(-2px);
-}
-
-.rect-right {
-    border-left: 2px solid var(--border-colour);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    margin-left: auto;
-    transform: translateX(2px);
-}
-
-.title-section {
-    padding: 10px;
-    margin: 0 10px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-}
-
-.card-title {
-    font-size: 2rem;
-    margin-bottom: 0;
+.content_section .title {
     font-weight: bold;
-    color: var(--dark-branding);
+    color: var(--light-branding);
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-color: var(--dark-gray);
+    border: var(--dark-brown) solid 2px;
+    border-radius: 10px;
+    padding: 5px 10px;
 }
 
-.card-subtitle {
-    font-size: 1.5rem;
+.content_section .text {
+    margin: 40px 25px 25px 25px;
+}
+
+.content_section .learn_more {
+    margin: 25px;
+}
+
+.content_section .learn_more a {
     color: whitesmoke;
+    font-weight: bold;
 }
 
-.rect-left p {
-    text-align: left;
+.content_section .learn_more a:hover {
+    color: var(--link-highlight);
 }
 
-.rect-right p {
-    text-align: right;
+.content_section img {
+    width: 100%;
+    margin-top: 25px;
+    filter: drop-shadow(0 0 0.4rem var(--dark-brown));
+}
+
+#user_friendly {
+    border-radius: 10px;
 }
