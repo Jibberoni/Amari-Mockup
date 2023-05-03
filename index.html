@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
     <title>AmariBot</title>
 </head>
 
@@ -21,13 +23,27 @@
         </a>
 
         <div class="menu">
-            <p><a target="_blank" href="https://amaribot.com/invite">Invite</a></p>
-            <p><a href="/commands">Commands</a></p>
-            <p><a href="/about">About</a></p>
-            <p><a href="/donate">Donate</a></p>
-            <img class="icon_formatting" src="DiscordIcon.png">
-            <p><a href="/profile">Venus#0519</a></p>
-            <a href="/logout"><img id="logout_svg" src="logout.svg" alt="Logout"></a>
+            <div class="desktop">
+                <p><a target="_blank" href="https://amaribot.com/invite">Invite</a></p>
+                <p><a href="/commands">Commands</a></p>
+                <p><a href="/about">About</a></p>
+                <p><a href="/donate">Donate</a></p>
+                <img class="icon_formatting" src="DiscordIcon.png">
+                <p><a href="/profile">Venus#0519</a></p>
+                <a href="/logout"><img id="logout_svg" src="logout.svg" alt="Logout"></a>
+            </div>
+
+            <div class="mobile">
+                <p>Menu ⮟</p>
+                <div class="dropdown_content">
+                    <p><a target="_blank" href="https://amaribot.com/invite">Invite</a></p>
+                    <p><a href="/commands">Commands</a></p>
+                    <p><a href="/about">About</a></p>
+                    <p><a href="/donate">Donate</a></p>
+                    <p><a href="/profile">Venus#0519</a></p>
+                    <p><a href="/logout">Logout</a></p>
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -38,7 +54,8 @@
                 <p class="typewriter">NO BLOAT, JUST LEVELS</p>
             </div>
 
-            <button onclick="location.href='https://amaribot.com/invite'" type="button" class="add-to-discord-btn">Add to Discord</button>
+            <button onclick="location.href='https://amaribot.com/invite'" type="button" class="add-to-discord-btn">Add
+                to Discord</button>
         </div>
 
         <div class="info_section">
@@ -52,7 +69,7 @@
                 <p class="title">User Friendly</p>
                 <p class="text">Amari's commands are created to be user friendly and easy to understand.</p>
                 <p class="learn_more">Learn More: <a href="/commands">Commands Page</a></p>
-                <img id="user_friendly" src="UserFriendly.gif">
+                <img src="UserFriendly.gif" style="border-radius: 10px;">
             </div>
             <div class="content_section">
                 <p class="title">Fully Customizable</p>
@@ -62,14 +79,17 @@
             </div>
         </div>
 
-        <div class="server_count">
-            <img src="NumberImages/2-09.png">
-            <img src="NumberImages/2-09.png">
-            <img src="NumberImages/8-09.png">
-            <img src="NumberImages/6-09.png">
-            <img src="NumberImages/6-09.png">
-            <img src="NumberImages/1-09.png">
+        <div class="community_section">
+            <div class="server_count">
+                <img src="NumberImages/2-09.png">
+                <img src="NumberImages/2-09.png">
+                <img src="NumberImages/8-09.png">
+                <img src="NumberImages/6-09.png">
+                <img src="NumberImages/6-09.png">
+                <img src="NumberImages/1-09.png">
+            </div>
         </div>
+
     </main>
 
     <footer class="footer">

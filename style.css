@@ -13,85 +13,6 @@
     background-color: var(--light-gray);
 }
 
-/* NAVBAR */
-
-.navbar_container {
-    margin: 8px;
-    padding: 15px;
-    border: solid 2px var(--border-colour);
-    border-radius: 10px;
-    background-color: var(--dark-gray);
-}
-
-.logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 44px;
-    display: flex;
-    align-items: center;
-}
-
-.logo p {
-    margin: 0;
-    color: #ffeba9;
-    font-size: 24px;
-}
-
-#amari_text {
-    margin-right: auto;
-}
-
-#bot_text {
-    margin-left: auto;
-}
-
-#logo_img {
-    height: 44px;
-    transform: rotate(0deg);
-    transition: transform 0.65s ease-in-out 0s;
-}
-
-#logo_img:hover {
-    transform: rotate(360deg);
-    transition: transform 0.65s ease-in-out 0s;
-}
-
-.menu {
-    display: flex;
-    width: 100%;
-}
-
-.menu p a:hover {
-    color: var(--link-highlight);
-}
-
-.navbar_container p {
-    margin: 10px;
-}
-
-.navbar_container p a {
-    text-decoration: none;
-    color: whitesmoke;
-    font-size: 18px;
-}
-
-.icon_formatting {
-    border-radius: 50%;
-    border: solid 2px var(--border-colour);
-    max-height: 44px;
-    margin-left: auto;
-}
-
-#logout_svg {
-    width: 24px;
-    height: 24px;
-    margin: 10px;
-}
-
-/* END NAVBAR */
-
-
 /* START BODY */
 
 body {
@@ -102,8 +23,6 @@ body {
 main {
     margin: 30px;
     padding: 15px 0;
-    padding-bottom: 81px;
-    /* CHANGE ME */
     border: solid 2px var(--border-colour);
     border-radius: 10px;
     background-color: var(--dark-gray);
@@ -189,7 +108,8 @@ main {
 .content_section {
     width: 30%;
     background-color: var(--light-gray);
-    padding: 20px;
+    padding: 1.5rem;
+    margin: .75rem;
     border: var(--dark-brown) solid 2px;
     border-radius: 10px;
     position: relative;
@@ -229,8 +149,16 @@ main {
     filter: drop-shadow(0 0 0.4rem var(--dark-brown));
 }
 
-#user_friendly {
-    border-radius: 10px;
+@media screen and (max-width: 768px) {
+    .info_section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content_section {
+        width: 80%;
+        margin-bottom: 20px;
+    }
 }
 
 /* END INFO SECTION */
@@ -252,75 +180,3 @@ main {
 }
 
 /* END BODY */
-
-
-/* FOOTER */
-
-.footer {
-    background-color: var(--dark-gray);
-    height: var(--footer-height);
-    width: 100%;
-    margin-top: auto;
-}
-
-.wave-wrapper {
-    position: relative;
-}
-
-.wave {
-    position: absolute;
-    bottom: var(--footer-height);
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.wave svg {
-    position: relative;
-    display: block;
-    width: calc(132% + 1.3px);
-    height: 32px;
-}
-
-#fill-wave {
-    fill: var(--dark-gray);
-}
-
-#fill-wave-under {
-    fill: var(--border-colour);
-}
-
-.wave-under {
-    z-index: -1;
-    bottom: calc(var(--footer-height) + 2px);
-}
-
-.footer_menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10vw;
-    max-width: 100%;
-}
-
-.footer_menu a,
-.footer_menu p {
-    margin-top: 25px;
-    text-decoration: none;
-    font-size: 1.1em;
-    color: whitesmoke;
-}
-
-.footer_menu a:hover {
-    /* Footer Link Highlighting */
-    color: var(--dark-branding);
-}
-
-#text_unclickable {
-    /* 2023 AmariBot. All Rights Reserved. */
-    color: var(--light-branding);
-}
-
-/* END FOOTER */

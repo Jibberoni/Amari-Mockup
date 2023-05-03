@@ -1,0 +1,86 @@
+.footer {
+    width: 100%;
+    margin-top: auto;
+}
+
+.wave-wrapper {
+    position: relative;
+}
+
+.wave {
+    position: absolute;
+    bottom: var(--footer-height);
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(132% + 1.3px);
+    height: 32px;
+}
+
+#fill-wave {
+    fill: var(--dark-gray);
+}
+
+#fill-wave-under {
+    fill: var(--border-colour);
+}
+
+.wave-under {
+    z-index: -1;
+    bottom: calc(var(--footer-height) + 2px);
+}
+
+.footer_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw;
+    max-width: 100%;
+    background-color: var(--dark-gray);
+}
+
+.footer_menu a,
+.footer_menu p {
+    margin-top: 25px;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: whitesmoke;
+}
+
+.footer_menu a:hover {
+    /* Footer Link Highlighting */
+    color: var(--dark-branding);
+}
+
+#text_unclickable {
+    /* 2023 AmariBot. All Rights Reserved. */
+    color: var(--light-branding);
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        border-top: var(--border-colour) 2px solid;
+    }
+
+    .footer_menu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0;
+    }
+
+    .footer_menu p {
+        margin: 10px 0;
+    }
+
+    .wave {
+        display: none;
+    }
+}
