@@ -34,7 +34,7 @@
 
 .wave-under {
     z-index: -1;
-    bottom: calc(var(--footer-height) + 2px);
+    bottom: calc(var(--footer-height) + 4px);
 }
 
 .footer_menu {
@@ -67,7 +67,7 @@
 
 @media only screen and (max-width: 768px) {
     .footer {
-        border-top: var(--border-colour) 2px solid;
+        border-top: var(--border-colour) 4px solid;
     }
 
     .footer_menu {

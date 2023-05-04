@@ -50,7 +50,7 @@
 .add-to-discord-btn {
     background-color: var(--light-brown);
     color: whitesmoke;
-    border: 2px solid var(--border-colour);
+    border: 4px solid var(--border-colour);
     border-radius: 10px;
     padding: 15px 30px;
     font-size: 1.5rem;
@@ -81,10 +81,10 @@
 
 .content_section {
     width: 30%;
-    background-color: var(--light-gray);
+    background-color: var(--dark-gray);
     padding: 1.5rem;
     margin: .75rem;
-    border: var(--dark-brown) solid 2px;
+    border: var(--border-colour) solid 4px;
     border-radius: 10px;
     position: relative;
 }
@@ -94,8 +94,8 @@
     position: absolute;
     top: -10px;
     left: -10px;
-    background-color: var(--dark-gray);
-    border: var(--dark-brown) solid 2px;
+    background-color: var(--dark-branding);
+    border: var(--border-colour) solid 4px;
     border-radius: 10px;
     padding: 5px 10px;
 }

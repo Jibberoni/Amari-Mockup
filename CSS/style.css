@@ -7,8 +7,9 @@
     --light-brown: #883636;
     --dark-gray: #23272A;
     --light-gray: #282c34;
+    --sat-red: #ff5a52;
     --footer-height: 70px;
-    --border-colour: var(--dark-brown);
+    --border-colour: var(--sat-red);
     --link-highlight: var(--dark-branding);
     background-color: var(--light-gray);
 }
@@ -23,9 +24,7 @@ body {
 main {
     margin: 2rem 1rem;
     padding: 15px 0;
-    border: solid 2px var(--border-colour);
     border-radius: 10px;
-    background-color: var(--dark-gray);
     color: whitesmoke;
 }
 

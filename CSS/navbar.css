@@ -1,7 +1,7 @@
 .navbar_container {
     margin: 8px;
     padding: 15px;
-    border: solid 2px var(--border-colour);
+    border: solid 4px var(--border-colour);
     border-radius: 10px;
     background-color: var(--dark-gray);
 }
@@ -53,7 +53,7 @@
 
 .icon_formatting {
     border-radius: 50%;
-    border: solid 2px var(--border-colour);
+    border: solid 4px var(--border-colour);
     max-height: 44px;
     margin-left: auto;
 }
@@ -92,7 +92,7 @@
         top: 45px;
         background-color: var(--dark-gray);
         border-radius: 10px;
-        border: var(--border-colour) solid 2px;
+        border: var(--border-colour) solid 4px;
         z-index: 1;
     }
 
