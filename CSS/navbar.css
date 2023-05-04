@@ -32,12 +32,12 @@
     transition: transform 0.65s ease-in-out 0s;
 }
 
-.menu .desktop {
+.desktop {
     display: flex;
     width: 100%;
 }
 
-.menu .desktop p a:hover {
+.desktop p a:hover {
     color: var(--link-highlight);
 }
 
@@ -69,4 +69,40 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+        justify-content: right;
+        position: relative;
+        color: whitesmoke;
+    }
+
+    .mobile p {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .dropdown_content {
+        text-align: right;
+        display: none;
+        position: absolute;
+        top: 45px;
+        background-color: var(--dark-gray);
+        border-radius: 10px;
+        border: var(--border-colour) solid 2px;
+        z-index: 1;
+    }
+
+    .dropdown_content p {
+        margin: 0;
+        padding: 7px 15px;
+    }
+
+    .mobile:hover .dropdown_content {
+        display: block;
+    }
+
 }

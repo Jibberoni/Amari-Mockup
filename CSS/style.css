@@ -1,0 +1,32 @@
+:root {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    --light-branding: #ffeba9;
+    --dark-branding: #ff795c;
+    --dark-brown: #5f1210;
+    --light-brown: #883636;
+    --dark-gray: #23272A;
+    --light-gray: #282c34;
+    --footer-height: 70px;
+    --border-colour: var(--dark-brown);
+    --link-highlight: var(--dark-branding);
+    background-color: var(--light-gray);
+}
+
+/* START BODY */
+
+body {
+    margin: 0;
+    position: relative;
+}
+
+main {
+    margin: 0.9rem;
+    padding: 15px 0;
+    border: solid 2px var(--border-colour);
+    border-radius: 10px;
+    background-color: var(--dark-gray);
+    color: whitesmoke;
+}
+
+/* END BODY */
