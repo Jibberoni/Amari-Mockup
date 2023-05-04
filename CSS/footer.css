@@ -57,6 +57,7 @@
 .footer_menu a:hover {
     /* Footer Link Highlighting */
     color: var(--dark-branding);
+    text-decoration: underline;
 }
 
 #text_unclickable {
