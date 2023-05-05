@@ -11,7 +11,9 @@
     --footer-height: 70px;
     --border-colour: var(--sat-red);
     --link-highlight: var(--dark-branding);
+    --border-var: 3px solid var(--sat-red);
     background-color: var(--light-gray);
+    
 }
 
 /* START BODY */
