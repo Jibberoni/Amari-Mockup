@@ -1,14 +1,9 @@
-.wrapper {
-    width: 100%;
-    max-width: 31.25rem;
-    margin: 6rem auto;
-}
-
 .searchBar {
-    width: 100%;
+    max-width: 60rem;
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: auto;
 }
 
 #searchQueryInput {
@@ -31,14 +26,44 @@
 .button-row button {
     margin: 0 0.5rem;
     padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    border: none;
-    outline: none;
-    background-color: #f5f5f5;
+    border-radius: 10px;
+    border: var(--border-var);
+    background-color: var(--light-brown);
+    color: whitesmoke;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .button-row button.active {
-    background-color: #007bff;
-    color: white;
+    background-color: var(--dark-brown);
+    color: var(--link-highlight);
+}
+
+
+.command-section {
+    border: var(--border-var);
+    border-radius: 10px;
+    background-color: var(--dark-gray);
+    width: 50%;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.command-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.command-details {
+    display: none;
+}
+
+.command-details.show {
+    display: block;
+    margin-top: 10px;
+}
+
+.command-details h4 {
+    margin-top: 0;
 }

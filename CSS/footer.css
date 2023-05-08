@@ -9,7 +9,7 @@
 
 .wave {
     position: absolute;
-    bottom: var(--footer-height);
+    bottom: calc(var(--footer-height) - 1px);
     left: 0;
     width: 100%;
     overflow: hidden;
