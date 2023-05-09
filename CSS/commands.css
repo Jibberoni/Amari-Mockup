@@ -67,3 +67,12 @@
 .command-details h4 {
     margin-top: 0;
 }
+
+.details-wrapper {
+    display: flex;
+}
+
+.details-column {
+    flex: 1;
+    margin-right: 10px;
+}
