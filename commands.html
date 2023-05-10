@@ -74,18 +74,20 @@
 
         <div class="command-section">
             <div class="command-header expand-button">
-                <h3 class="command-name">!help</h3>
+                <p class="command-name">!help</p>
                 <p class="command-subtitle">Displays a list of available commands</p>
             </div>
             <div class="command-details">
                 <div class="details-wrapper">
                     <div class="details-column">
                         <h4>Usage:</h4>
-                        <p>!help [command]</p>
+                        <p>Sets the channel where announcement messages appear.</p>
+                        <p class="command-block">:?announce set <#channel></p>
                     </div>
                     <div class="details-column">
                         <h4>Example:</h4>
-                        <p>!help</p>
+                        <br/>
+                        <p class="command-block">:?announce set #announcements</p>
                     </div>
                 </div>
             </div>
@@ -95,9 +97,11 @@
         <script>
             const expandButton = document.querySelector('.expand-button');
             const commandDetails = document.querySelector('.command-details');
+            const commandHeader = document.querySelector('.command-header');
 
             expandButton.addEventListener('click', function () {
                 commandDetails.classList.toggle('show');
+                commandHeader.classList.toggle('underline');
             });
         </script>
 
