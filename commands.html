@@ -82,30 +82,75 @@
                     <div class="details-column">
                         <h4>Usage:</h4>
                         <p>Sets the channel where announcement messages appear.</p>
-                        <p class="command-block">:?announce set <#channel></p>
+                        <p class="command-block">:?announce set <#channel>
+                        </p>
                     </div>
                     <div class="details-column">
                         <h4>Example:</h4>
-                        <br/>
+                        <br />
                         <p class="command-block">:?announce set #announcements</p>
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="command-section">
+            <div class="command-header expand-button">
+                <p class="command-name">!help</p>
+                <p class="command-subtitle">Displays a list of available commands</p>
+            </div>
+            <div class="command-details">
+                <div class="details-wrapper">
+                    <div class="details-column">
+                        <h4>Usage:</h4>
+                        <p>Sets the channel where announcement messages appear.</p>
+                        <p class="command-block">:?announce set <#channel>
+                        </p>
+                    </div>
+                    <div class="details-column">
+                        <h4>Example:</h4>
+                        <br />
+                        <p class="command-block">:?announce set #announcements</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="command-section">
+            <div class="command-header expand-button">
+                <p class="command-name">!help</p>
+                <p class="command-subtitle">Displays a list of available commands</p>
+            </div>
+            <div class="command-details">
+                <div class="details-wrapper">
+                    <div class="details-column">
+                        <h4>Usage:</h4>
+                        <p>Sets the channel where announcement messages appear.</p>
+                        <p class="command-block">:?announce set <#channel>
+                        </p>
+                    </div>
+                    <div class="details-column">
+                        <h4>Example:</h4>
+                        <br />
+                        <p class="command-block">:?announce set #announcements</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <script>
-            const expandButton = document.querySelector('.expand-button');
-            const commandDetails = document.querySelector('.command-details');
-            const commandHeader = document.querySelector('.command-header');
+            const expandButtons = document.querySelectorAll('.expand-button');
 
-            expandButton.addEventListener('click', function () {
-                commandDetails.classList.toggle('show');
-                commandHeader.classList.toggle('underline');
+            expandButtons.forEach(function (expandButton) {
+                const commandDetails = expandButton.nextElementSibling;
+                const commandHeader = expandButton;
+
+                expandButton.addEventListener('click', function () {
+                    commandDetails.classList.toggle('show');
+                    commandHeader.classList.toggle('underline');
+                });
             });
         </script>
-
-
 
     </main>
 
