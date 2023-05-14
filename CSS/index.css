@@ -83,7 +83,7 @@
     background-color: var(--dark-gray);
     padding: 1.5rem;
     margin: .75rem;
-    border: var(--border-var);
+    /* border: var(--border-var); */
     border-radius: 10px;
     position: relative;
 }
