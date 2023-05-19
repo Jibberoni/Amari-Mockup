@@ -53,15 +53,21 @@
 
 .icon_formatting {
     border-radius: 50%;
-    border: var(--border-var);
     max-height: 44px;
     margin-left: auto;
 }
 
-#logout_svg {
+.logout_svg {
     width: 24px;
     height: 24px;
     margin: 10px;
+    fill: whitesmoke;
+    transition: fill 0.3s ease;
+}
+
+.logout_svg:hover {
+    fill: var(--link-highlight);
+    transition: fill 0.3s ease;
 }
 
 .mobile {
