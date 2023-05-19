@@ -48,7 +48,7 @@
 }
 
 .add-to-discord-btn {
-    background-color: var(--light-brown);
+    background-color: var(--dark-branding);
     color: whitesmoke;
     border: var(--border-var);
     border-radius: 10px;
@@ -56,10 +56,8 @@
     font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
-    transition: all 0.1s ease-in-out;
     display: block;
     margin: 0 auto;
-    text-align: center;
 }
 
 .add-to-discord-btn:hover {
@@ -86,6 +84,29 @@
     /* border: var(--border-var); */
     border-radius: 10px;
     position: relative;
+}
+
+.content_section:first-child::before {
+    content: "";
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    background-image: url("../Media/Flowers/curved_branch.png");
+    background-size: cover;
+    bottom: -3rem;
+    left: -2.5rem;
+    transform: rotate(180deg);
+}
+
+.content_section:last-child::before {
+    content: "";
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    background-image: url("../Media/Flowers/curved_branch.png");
+    background-size: cover;
+    top: -3rem;
+    right: -2.5rem;
 }
 
 .content_section .title {
