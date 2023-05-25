@@ -49,17 +49,21 @@
     <main>
         <p class="header-text">FAQ</p>
         <div class="FAQ_section">
-            <section>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam fuga corporis sequi at cupiditate
-                    perferendis est dolorem labore, incidunt tempore beatae possimus excepturi blanditiis molestiae
-                    debitis ipsam, libero, alias unde?</p>
-                <p>Fugiat aut, magnam itaque ipsam optio dicta dolor doloribus ratione iusto asperiores quos, harum
-                    aperiam reprehenderit tempore ea laboriosam animi natus porro eaque, esse molestias. Tempore
-                    voluptatibus nam voluptatum nobis!</p>
-                <p>Nesciunt commodi officiis doloribus qui tempora provident dolorem dolorum sequi distinctio
-                    repellendus molestias hic dicta facilis at eaque perferendis ut culpa magni quasi pariatur tempore
-                    ducimus, mollitia voluptatibus ad! Consequuntur?</p>
-            </section>
+            <div class="command-section">
+                <div class="command-header expand-button">
+                    <p class="command-name">The bot won't answer me! What do I do?</p>
+                </div>
+                <div class="command-details">
+                    <ul class="custom-list">
+                        <li>It could be a permissions issue! Make sure the bot has the "Send Messages" and "Embed Links"
+                            permissions in that channel.</li>
+                        <li>You may have changed the prefix and forgot about it! Ping @Amaribot for the current prefix
+                            in use</li>
+                        <li>You may be typing the default prefix wrong! Make sure you're actually typing :? as the
+                            prefix.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
         <p class="header-text">MEET THE TEAM</p>
@@ -151,21 +155,49 @@
             </div>
         </div>
 
-        <p class="header-text">EXP</p>
+        <p id="experience" class="header-text">EXP</p>
         <div class="EXP_section">
-            <section>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam fuga corporis sequi at cupiditate
-                    perferendis est dolorem labore, incidunt tempore beatae possimus excepturi blanditiis molestiae
-                    debitis ipsam, libero, alias unde?</p>
-                <p>Fugiat aut, magnam itaque ipsam optio dicta dolor doloribus ratione iusto asperiores quos, harum
-                    aperiam reprehenderit tempore ea laboriosam animi natus porro eaque, esse molestias. Tempore
-                    voluptatibus nam voluptatum nobis!</p>
-                <p>Nesciunt commodi officiis doloribus qui tempora provident dolorem dolorum sequi distinctio
-                    repellendus molestias hic dicta facilis at eaque perferendis ut culpa magni quasi pariatur tempore
-                    ducimus, mollitia voluptatibus ad! Consequuntur?</p>
-            </section>
+            <div class="exp_calculator">
+                <div class="calculator_title">
+                    <h2>Chat Levels</h2>
+                    <p class="calculator_subtitle">The following values are all estimated</p>
+                </div>
+                <div class="flexbox">
+                    <div class="input_box">
+                        <label for="level_input">Level</label>
+                        <input type="number" id="level_input">
+                    </div>
+                    <div class="input_box">
+                        <label for="exp_input">Starting EXP/Level</label>
+                        <input type="number" id="exp_input">
+                    </div>
+                    <div class="input_box">
+                        <label for="cooldown_input">Cooldown</label>
+                        <input type="number" id="cooldown_input">
+                    </div>
+                    <div class="input_box">
+                        <label for="multiplier_input">Multiplier</label>
+                        <input type="number" id="multiplier_input">
+                    </div>
+                    <div class="input_box">
+                        <label for="role_input">Role 1</label>
+                        <input type="number" id="role_input">
+                        <button class="plus_button">+</button>
+                    </div>
+                    <div class="stat_box">
+                        <div class="stat_item">
+                            <p>Messages: 35</p>
+                        </div>
+                        <div class="stat_item">
+                            <p>Required XP: 35</p>
+                        </div>
+                        <div class="stat_item">
+                            <p>Time: 4 minutes 40 seconds</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </main>
 
     <footer class="footer">
@@ -194,6 +226,20 @@
             <p><a href="/">Support Server</a></p>
         </div>
     </footer>
+
+    <script>
+        const expandButtons = document.querySelectorAll('.expand-button');
+
+        expandButtons.forEach(function (expandButton) {
+            const commandDetails = expandButton.nextElementSibling;
+            const commandHeader = expandButton;
+
+            expandButton.addEventListener('click', function () {
+                commandDetails.classList.toggle('show');
+                commandHeader.classList.toggle('underline');
+            });
+        });
+    </script>
 
 </body>
 
