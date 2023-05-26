@@ -1,7 +1,7 @@
 /* START INTRO SECTION */
 
 .intro_section {
-    margin: 50px;
+    margin: 3rem;
 }
 
 .intro_text {
@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 2rem;
 }
 
 .intro_text p:first-child {
@@ -31,7 +31,7 @@
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 3px solid;
+    border-right: 2px solid;
     font-size: 1.5rem;
 }
 
@@ -73,7 +73,8 @@
 .info_section {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    margin: 0 auto;
+    max-width: 95%;
 }
 
 .content_section {
@@ -89,8 +90,8 @@
 .content_section:first-child::before {
     content: "";
     position: absolute;
-    width: 10rem;
-    height: 10rem;
+    width: 9rem;
+    height: 9rem;
     background-image: url("../Media/Flowers/curved_branch.png");
     background-size: cover;
     bottom: -3rem;
@@ -101,8 +102,8 @@
 .content_section:last-child::before {
     content: "";
     position: absolute;
-    width: 10rem;
-    height: 10rem;
+    width: 9rem;
+    height: 9rem;
     background-image: url("../Media/Flowers/curved_branch.png");
     background-size: cover;
     top: -3rem;
@@ -112,8 +113,8 @@
 .content_section .title {
     font-weight: bold;
     position: absolute;
-    top: -10px;
-    left: -10px;
+    top: -.65rem;
+    left: -.65rem;
     background-color: var(--dark-branding);
     border: var(--border-var);
     border-radius: 10px;
@@ -121,11 +122,11 @@
 }
 
 .content_section .text {
-    margin: 40px 25px 25px 25px;
+    margin: 3rem 2rem 2rem 2rem;
 }
 
 .content_section .learn_more {
-    margin: 25px;
+    margin: 2rem;
 }
 
 .content_section .learn_more a {
@@ -139,7 +140,7 @@
 
 .content_section img {
     width: 100%;
-    margin-top: 25px;
+    margin-top: 2rem;
     filter: drop-shadow(0 0 0.4rem var(--border-colour));
 }
 
@@ -155,7 +156,7 @@
 
     .content_section {
         width: 80%;
-        margin-bottom: 20px;
+        margin-bottom: 1.5rem;
     }
 
     .typewriter {
@@ -164,24 +165,3 @@
 }
 
 /* END INFO SECTION */
-
-
-/* START SERVER COUNT */
-
-.server_count {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    width: 100%;
-    overflow-x: auto;
-    justify-content: center;
-}
-
-.server_count img {
-    max-width: calc((100% / 6) - 5%);
-    height: auto;
-    margin-right: 5px;
-    flex-grow: 1;
-}
-
-/* END SERVER COUNT */
