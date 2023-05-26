@@ -209,4 +209,34 @@ input[type=number] {
     transition: transform 0.1s ease-in-out;
 }
 
+.code-block, .ping-block {
+    border-radius: 5px;
+    padding: 0px .2rem;
+    margin: auto .1rem;
+}
+
+.code-block {
+    background-color: var(--light-gray);
+    color: var(--dark-branding);
+}
+
+.ping-block {
+    background-color: var(--dark-branding);
+    color: whitesmoke;
+}
+
+a {
+    color: var(--dark-branding);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.emphasis {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 /* END FAQ SECTION */
