@@ -156,32 +156,12 @@ input[type=number] {
 
 /* FAQ SECTION */
 
-.command-section {
-    border: var(--border-var);
-    border-radius: 10px;
-    background-color: var(--dark-gray);
+.dropdown-section {
     width: 80%;
-    margin: 1rem auto;
-    padding: 1rem;
 }
 
-.command-header {
-    display: flex;
-    cursor: pointer;
-    font-size: 1.2rem;
-}
-
-.command-header.underline {
-    border-bottom: var(--border-var);
-}
-
-.command-details {
-    display: none;
-}
-
-.command-details.show {
-    display: block;
-    margin-top: 10px;
+.chevron {
+    margin-left: auto;
 }
 
 .custom-list {
@@ -199,37 +179,6 @@ input[type=number] {
     background-repeat: no-repeat;
     background-position: center;
     margin-right: .5rem;
-}
-
-.chevron {
-    width: 1.5rem;
-    margin-left: auto;
-    transition: transform 0.1s ease-in-out;
-}
-
-.chevron-path {
-    fill: var(--dark-branding);
-}
-
-.chevron.rotate {
-    transform: rotate(90deg);
-    transition: transform 0.1s ease-in-out;
-}
-
-.code-block, .ping-block {
-    border-radius: 5px;
-    padding: 0px .2rem;
-    margin: auto .1rem;
-}
-
-.code-block {
-    background-color: var(--light-gray);
-    color: var(--dark-branding);
-}
-
-.ping-block {
-    background-color: var(--dark-branding);
-    color: whitesmoke;
 }
 
 a {
