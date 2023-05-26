@@ -59,8 +59,12 @@
 }
 
 .command-name {
-    flex: 1;
     font-weight: bold;
+}
+
+.command-subtitle {
+    margin-left: auto;
+    margin-right: 1rem;
 }
 
 .command-details {
@@ -86,4 +90,18 @@
     border-radius: 10px;
     padding: .25rem 0px;
     color: var(--dark-branding);
+}
+
+.chevron {
+    width: 1.5rem;
+    transition: transform 0.1s ease-in-out;
+}
+
+.chevron-path {
+    fill: var(--dark-branding);
+}
+
+.chevron.rotate {
+    transform: rotate(90deg);
+    transition: transform 0.1s ease-in-out;
 }

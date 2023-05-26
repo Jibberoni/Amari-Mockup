@@ -91,6 +91,7 @@ main {
 
 .flexbox {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .input_box {
@@ -142,6 +143,12 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
     -moz-appearance: textfield;
+}
+
+@media screen and (max-width: 600px) {
+    .flexbox {
+        flex-direction: column;
+    }
 }
 
 /* END EXP SECTION */

@@ -74,6 +74,10 @@
             <div class="command-header expand-button">
                 <p class="command-name">!help</p>
                 <p class="command-subtitle">Displays a list of available commands</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="chevron">
+                    <path class="chevron-path"
+                        d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z" />
+                </svg>
             </div>
             <div class="command-details">
                 <div class="details-wrapper">
@@ -96,6 +100,10 @@
             <div class="command-header expand-button">
                 <p class="command-name">!help</p>
                 <p class="command-subtitle">Displays a list of available commands</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="chevron">
+                    <path class="chevron-path"
+                        d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z" />
+                </svg>
             </div>
             <div class="command-details">
                 <div class="details-wrapper">
@@ -118,6 +126,10 @@
             <div class="command-header expand-button">
                 <p class="command-name">!help</p>
                 <p class="command-subtitle">Displays a list of available commands</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="chevron">
+                    <path class="chevron-path"
+                        d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z" />
+                </svg>
             </div>
             <div class="command-details">
                 <div class="details-wrapper">
@@ -142,10 +154,12 @@
             expandButtons.forEach(function (expandButton) {
                 const commandDetails = expandButton.nextElementSibling;
                 const commandHeader = expandButton;
+                const chevron = expandButton.querySelector('.chevron');
 
                 expandButton.addEventListener('click', function () {
                     commandDetails.classList.toggle('show');
                     commandHeader.classList.toggle('underline');
+                    chevron.classList.toggle('rotate');
                 });
             });
         </script>
