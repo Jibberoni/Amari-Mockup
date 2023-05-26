@@ -46,12 +46,16 @@
         </div>
     </nav>
 
-    <main>
+    <main class="main-margins">
         <p class="header-text">FAQ</p>
         <div class="FAQ_section">
             <div class="command-section">
                 <div class="command-header expand-button">
-                    <p class="command-name">The bot won't answer me! What do I do?</p>
+                    <p>The bot won't answer me! What do I do?</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="chevron">
+                        <path class="chevron-path"
+                            d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z" />
+                    </svg>
                 </div>
                 <div class="command-details">
                     <ul class="custom-list">
@@ -61,6 +65,82 @@
                             in use</li>
                         <li>You may be typing the default prefix wrong! Make sure you're actually typing :? as the
                             prefix.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="command-section">
+                <div class="command-header expand-button">
+                    <p>The bot is telling me I don't have permission, what gives?</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="chevron">
+                        <path class="chevron-path"
+                            d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z" />
+                    </svg>
+                </div>
+                <div class="command-details">
+                    <ul class="custom-list">
+                        <li> You probably don't have the AmariMod role! Create a role called AmariMod (case sensitive) in your server and give it to yourself. It'll also work if you have the "Administrator" permission.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="command-section">
+                <div class="command-header expand-button">
+                    <p>How frequently do people gain EXP with AmariBot?</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="chevron">
+                        <path class="chevron-path"
+                            d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z" />
+                    </svg>
+                </div>
+                <div class="command-details">
+                    <ul class="custom-list">
+                        <li>Default rate is 1 EXP per message, with a cooldown of 8 seconds! Customize these rates by becoming a donator. Find the level table here.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="command-section">
+                <div class="command-header expand-button">
+                    <p>How do I make the bot give roles at a certain level?</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="chevron">
+                        <path class="chevron-path"
+                            d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z" />
+                    </svg>
+                </div>
+                <div class="command-details">
+                    <ul class="custom-list">
+                        <li>With the rlevel command! Example: :?rlevel add 1 epic test would give members the role "epic test" once they reach level 1. Read through :?rhelp level for more.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="command-section">
+                <div class="command-header expand-button">
+                    <p>I configured rlevel correctly, but the bot isn't assigning roles!</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="chevron">
+                        <path class="chevron-path"
+                            d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z" />
+                    </svg>
+                </div>
+                <div class="command-details">
+                    <ul class="custom-list">
+                        <li>In your server, check if the bot's role is above the roles it's trying to give. It cannot give roles that are above itself under any circumstance.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="command-section">
+                <div class="command-header expand-button">
+                    <p>Members are keeping this old roles after getting a new one. Can I change this?</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="chevron">
+                        <path class="chevron-path"
+                            d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z" />
+                    </svg>
+                </div>
+                <div class="command-details">
+                    <ul class="custom-list">
+                        <li> Yes, you can! Use the :rlevel replace command!</li>
+                        <li>To set it back so roles accumulate, keeping all roles, use :?rlevel accumulate instead.</li>
                     </ul>
                 </div>
             </div>
@@ -233,10 +313,12 @@
         expandButtons.forEach(function (expandButton) {
             const commandDetails = expandButton.nextElementSibling;
             const commandHeader = expandButton;
+            const chevron = expandButton.querySelector('.chevron');
 
             expandButton.addEventListener('click', function () {
                 commandDetails.classList.toggle('show');
                 commandHeader.classList.toggle('underline');
+                chevron.classList.toggle('rotate');
             });
         });
     </script>

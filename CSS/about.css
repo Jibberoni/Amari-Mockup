@@ -1,15 +1,10 @@
-.FAQ_section,
-.staff_section,
-.EXP_section {
-    padding: 1.5rem;
-    background-image: linear-gradient(346deg, rgba(55, 55, 55, 0.04) 0%, rgba(55, 55, 55, 0.04) 22%, rgba(140, 140, 140, 0.04) 22%, rgba(140, 140, 140, 0.04) 69%, rgba(225, 225, 225, 0.04) 69%, rgba(225, 225, 225, 0.04) 100%), linear-gradient(31deg, rgba(55, 55, 55, 0.04) 0%, rgba(55, 55, 55, 0.04) 42%, rgba(140, 140, 140, 0.04) 42%, rgba(140, 140, 140, 0.04) 85%, rgba(225, 225, 225, 0.04) 85%, rgba(225, 225, 225, 0.04) 100%), linear-gradient(55deg, rgba(55, 55, 55, 0.04) 0%, rgba(55, 55, 55, 0.04) 13%, rgba(140, 140, 140, 0.04) 13%, rgba(140, 140, 140, 0.04) 72%, rgba(225, 225, 225, 0.04) 72%, rgba(225, 225, 225, 0.04) 100%), linear-gradient(90deg, rgb(35, 39, 42), rgb(35, 39, 42));
-    background-attachment: fixed;
-    border: var(--border-var);
-    border-radius: 10px;
-    margin: 1rem auto;
-    max-width: 90%;
+main {
+    max-width: 85%;
 }
 
+.main-margins {
+    margin: 0 auto 2rem auto;
+}
 
 /* STAFF SECTION */
 
@@ -173,11 +168,6 @@ input[type=number] {
     border-bottom: var(--border-var);
 }
 
-.command-name {
-    flex: 1;
-    font-weight: bold;
-}
-
 .command-details {
     display: none;
 }
@@ -204,7 +194,19 @@ input[type=number] {
     margin-right: .5rem;
 }
 
+.chevron {
+    width: 1.5rem;
+    margin-left: auto;
+    transition: transform 0.1s ease-in-out;
+}
 
+.chevron-path {
+    fill: var(--dark-branding);
+}
 
+.chevron.rotate {
+    transform: rotate(90deg);
+    transition: transform 0.1s ease-in-out;
+}
 
 /* END FAQ SECTION */
