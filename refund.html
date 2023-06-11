@@ -9,43 +9,12 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/refund.css">
     <title>AmariBot</title>
+
+    <script src="snippet-loader.js"></script>
+    <div id="reusable-header"></div> <!-- The div where the HTML snippet will be injected -->
 </head>
 
 <body>
-    <nav class="navbar_container">
-        <a href="/">
-            <div class="logo">
-                <p>Amari</p>
-                <img id="logo_img" src="Media/UserIcons/NoStaffIcon.png">
-                <p>Bot</p>
-            </div>
-        </a>
-
-        <div class="menu">
-            <div class="desktop">
-                <p><a target="_blank" href="https://amaribot.com/invite">Invite</a></p>
-                <p><a href="/commands.html">Commands</a></p>
-                <p><a href="/about.html">About</a></p>
-                <p><a href="/donate.html">Donate</a></p>
-                <img class="icon_formatting" src="Media/UserIcons/DiscordIcon.png">
-                <p><a href="/profile.html">Venus#0519</a></p>
-                <a href="/logout.html"><img id="logout_svg" src="Media/logout.svg" alt="Logout"></a>
-            </div>
-
-            <div class="mobile">
-                <p>Menu</p>
-                <div class="dropdown_content">
-                    <p><a target="_blank" href="https://amaribot.com/invite">Invite</a></p>
-                    <p><a href="/commands.html">Commands</a></p>
-                    <p><a href="/about.html">About</a></p>
-                    <p><a href="/donate.html">Donate</a></p>
-                    <p><a href="/profile.html">Venus#0519</a></p>
-                    <p><a href="/logout.html">Logout</a></p>
-                </div>
-            </div>
-        </div>
-    </nav>
-
     <main>
         <p class="header-text">REFUND POLICY</p>
         <div class="wrapper">
@@ -99,6 +68,13 @@
         </div>
     </footer>
 
+    <script>
+        // Load the HTML snippet and inject it into the element
+        window.addEventListener('DOMContentLoaded', function() {
+        const snippetLoader = new SnippetLoader('reusable-header.html', 'reusable-header');
+        snippetLoader.load();
+        });
+    </script>
 </body>
 
 
