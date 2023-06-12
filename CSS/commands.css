@@ -28,15 +28,15 @@
     padding: 0.5rem 1rem;
     border-radius: 10px;
     border: var(--border-var);
-    background-color: var(--light-brown);
+    background-color: var(--lightest-gray);
     color: whitesmoke;
     font-size: 1rem;
     cursor: pointer;
 }
 
 .button-row button.active {
-    background-color: var(--dark-brown);
-    color: var(--link-highlight);
+    background-color: var(--dark-gray);
+    border-color: var(--sat-red);
 }
 
 .dropdown-section {
@@ -45,6 +45,7 @@
 
 .command-name {
     font-weight: bold;
+    color: var(--dark-branding);
 }
 
 .janky-hack-mate {
